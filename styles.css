@@ -29,7 +29,7 @@ html {
 
 body {
     min-height: 100vh;
-    margin: 0;
+    margin: 10px;
 }
 
 *,
@@ -101,26 +101,48 @@ header>nav li {
 }
 
 header>nav a {
-    font-family: 'Raleway', 'myRaleway', sans-serif;
+    font-family: 'Raleway', 'myRaleway', Verdana, sans-serif;
     color: black;
+    font-size: 0.8rem;
 }
 
 /* || LANDING */
 
 .figure-caption-grid {
     display: grid;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr auto;
+    place-items: center;
+    place-content: center;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
-.figure-caption-grid > img {
-    grid-row-start: span 2;
-    grid-column-start: span 2;
+.figure-caption-grid>* {
+    grid-area: 1 / 1;
 }
 
-.figure-caption-grid > figcaption {
-    grid-row-start: 2;
-    grid-column-start: 2;
+.figure-caption-grid img {
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.figure-caption-grid>figcaption {
+    font-family: 'Raleway', 'myRaleway', Verdana, sans-serif;
+    place-self: end right;
+    margin: 5vw;
+}
+
+.figure-caption-grid h2,
+.figure-caption-grid h2>a {
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.figure-caption-grid li>a {
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+
 }
 
 /* || WINES SECTION */
@@ -152,7 +174,7 @@ header>nav a {
     left: 0;
     background-color: black;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: transform 0.4s ease-out;
 }
 
 .black-underline-animation:hover:after {
@@ -175,7 +197,7 @@ header>nav a {
     left: 0;
     background-color: white;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: transform 0.4s ease-out;
 }
 
 .white-underline-animation:hover:after {
