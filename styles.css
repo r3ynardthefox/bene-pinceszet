@@ -29,7 +29,6 @@ html {
 
 body {
     min-height: 100vh;
-    margin: 0px 5vw;
 }
 
 *,
@@ -49,8 +48,16 @@ img {
     display: block;
 }
 
+hr {
+    margin: 3vw 0;
+}
+
 section {
     scroll-margin-top: 60px;
+}
+
+main {
+    padding: 0 5vw;
 }
 
 /* || HEADER & NAV */
@@ -64,7 +71,7 @@ header {
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
     align-items: center;
-    padding: 10px;
+    padding: 3vw 5vw;
 }
 
 header>h1 {
@@ -102,19 +109,24 @@ header>nav li {
 }
 
 header>nav a {
-    font-family: 'Raleway', 'myRaleway', Verdana, sans-serif;
+    font-family: 'Raleway', 'myRaleway', Tahoma, sans-serif;
     color: black;
     font-size: 1rem;
 }
 
 /* || LANDING */
 
+.landing-grid {
+    display: grid;
+    row-gap: 3vw;
+    column-gap: 3vw;
+}
+
 .figure-caption-grid {
     display: grid;
     place-items: center;
     place-content: center;
     overflow: hidden;
-    margin-bottom: 10px;
 }
 
 .figure-caption-grid>* {
@@ -127,7 +139,7 @@ header>nav a {
 }
 
 .figure-caption-grid>figcaption {
-    font-family: 'Raleway', 'myRaleway', Verdana, sans-serif;
+    font-family: 'Raleway', 'myRaleway', Tahoma, sans-serif;
     place-self: end right;
     margin: 5vw;
 }
@@ -151,7 +163,33 @@ header>nav a {
 .wines-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1vw;
+    gap: 3vw;
+}
+
+.wine-card {
+    padding: 2vw;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.2);
+    border-radius: 3px;
+    transition: all 0.2s ease-out;
+    background-color: white;
+}
+
+.wine-card:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.wine-card h2,
+.wine-card time {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.wine-card h2 {
+    margin-top: 1vw;
+}
+
+.wine-card p {
+    font-family: 'Raleway', 'myRaleway', Tahoma, sans-serif;
+    margin-top: 2vw;
 }
 
 /* || ABOUT SECTION */
