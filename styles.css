@@ -56,8 +56,22 @@ section {
     scroll-margin-top: 60px;
 }
 
-main {
+main,
+footer {
     padding: 0 5vw;
+}
+
+h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+p,
+a {
+    font-family: 'Raleway', 'myRaleway', 'Lucida Console', sans-serif;
+    line-height: 1.3rem;
+    hyphens: auto;
+    text-align: left;
+    color: black;
 }
 
 /* || HEADER & NAV */
@@ -109,8 +123,6 @@ header>nav li {
 }
 
 header>nav a {
-    font-family: 'Raleway', 'myRaleway', Tahoma, sans-serif;
-    color: black;
     font-size: 1rem;
 }
 
@@ -139,7 +151,6 @@ header>nav a {
 }
 
 .figure-caption-grid>figcaption {
-    font-family: 'Raleway', 'myRaleway', Tahoma, sans-serif;
     place-self: end right;
     margin: 5vw;
 }
@@ -178,23 +189,29 @@ header>nav a {
     transform: scale(1.05, 1.05);
 }
 
-.wine-card h2,
-.wine-card time {
-    font-family: 'Playfair Display', Georgia, serif;
-}
-
 .wine-card h2 {
     margin-top: 1vw;
 }
 
 .wine-card p {
-    font-family: 'Raleway', 'myRaleway', Tahoma, sans-serif;
     margin-top: 2vw;
 }
 
-/* || ABOUT SECTION */
+/* || ABOUT, CONTACT SECTION */
 
-/* || CONTACT SECTION */
+.fig-with-paragraph h2 {
+    margin: 2vw 0;
+}
+
+.fig-with-paragraph p {
+    margin-bottom: 2vw;
+}
+
+/* || FOOTER */
+
+footer {
+    font-size: 0.8rem;
+}
 
 /* || ANIMATIONS */
 
